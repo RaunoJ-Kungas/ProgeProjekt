@@ -1,0 +1,6 @@
+1;tekst 1_Siin on teine rida, sest _ tähendab reavahetust.;valik 1.1;2;valik 1.2;3;valik 1.3;4;
+2;tekst 2;valik 2.1;5;valik 2.2;6;valik 2.3;1;
+3;tekst 3;valik 3.1;5;valik 3.2;6;valik 3.3;1;
+4;tekst 4;valik 4.1;5;valik 4.2;6;valik 4.3;1;
+5;tekst 5 (lõpp);;;;;;;
+6;tekst 6 (lõpp);;;;;;;
