@@ -1,5 +1,5 @@
 from tkinter import *
-
+from tkinter import ttk
 """
 
 See on programmi internal readme sektsioon. 
@@ -128,6 +128,16 @@ nupp1.grid(row=0, column=0, sticky="nsew", pady=5)
 nupp2.grid(row=1, column=0, sticky="nsew", pady=5)
 nupp3.grid(row=2, column=0, sticky="nsew", pady=5)
 nupud = [nupp1, nupp2, nupp3]
+
+#Lisasin nuppudele hover efekti, sest lugesin selle kohta just ja tahtsin seda teha. vb tuleb veic seda sättida prst aga jaa.
+nupp1.bind("<Enter>", lambda event: nupp1.config(borderwidth=3, relief='sunken', bg='lightgray'))
+nupp1.bind("<Leave>", lambda event: nupp1.config(borderwidth=0, relief='raised', bg='SystemButtonFace'))
+nupp2.bind("<Enter>", lambda event: nupp2.config(borderwidth=3, relief='sunken', bg='lightgray'))
+nupp2.bind("<Leave>", lambda event: nupp2.config(borderwidth=0, relief='raised', bg='SystemButtonFace'))
+nupp3.bind("<Enter>", lambda event: nupp3.config(borderwidth=3, relief='sunken', bg='lightgray'))
+nupp3.bind("<Leave>", lambda event: nupp3.config(borderwidth=0, relief='raised', bg='SystemButtonFace'))
+
+
 
 naita("1")
 aken.mainloop()
