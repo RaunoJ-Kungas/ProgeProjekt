@@ -156,6 +156,8 @@ class torupaar():
         
 
 def main():
+    """Tagastab skoori, mis mängija sai.
+    saab veel veic mudida, et näidata mängijale lõpp-skoori ja siis kinni panna, või anda võimalus uuesti teha, lmk"""
     pg.init()
     #muutujate ala
     font=pg.font.SysFont("Arial", 36)
@@ -237,7 +239,7 @@ def main():
             toru.uuenda(kiirus_x,ala)
         if linnuke.uuenda(ala):
             mäng_käib=False
-    mängu_lõpp()
+    #mängu_lõpp() Kui tahame anda võimalust retry'da.
     pg.event.pump()
     pg.quit()
     return Skoor
